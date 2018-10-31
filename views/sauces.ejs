@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Saucey Sauces</title>
+<style>
+  img { max-width: 400px; }
+</style>
+  </head>
+  <body>
+    <a href="/sauces/new" title="Add Sauce">Add Sauce</a>
+    <% sauces.forEach(sauce => { %>
+      <section>
+        <hr />
+        <h2><%= sauce.name.toUpperCase(); %> Sauce</h2>
+        <a href="/sauces/<%= sauce.id %>" title="<%= sauce.name %> sauce"><img src="<%= sauce.image %>" alt="<%= sauce.name %>" /></a>
+      </section> 
+    <% }); %>
+  </body>
+</html>

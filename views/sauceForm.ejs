@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Saucey Sauces - New Sauce</title>
+  </head>
+  <body>
+    <form method="POST" action="<%= action %>">
+      <input type="text" name="name" placeholder="Enter the name..." value="<%= (sauce) ? sauce.name : '' %>" /><br />
+      <input type="text" name="image" placeholder="Enter image URL..." value="<%= (sauce) ? sauce.image : '' %>" /><br />
+      <button type="submit">Save Sauce</button> 
+    </form>
+  </body>
+</html>

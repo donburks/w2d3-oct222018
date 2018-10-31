@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Saucey Sauces - <%= sauce.name %></title>
+<style>
+  img { max-width: 400px; }
+</style>
+  </head>
+  <body>
+    <section>
+      <hr />
+      <h2><%= sauce.name.toUpperCase(); %> Sauce</h2>
+      <img src="<%= sauce.image %>" alt="<%= sauce.name %>" />
+    </section> 
+    <a href="/sauces/<%= sauce.id %>/edit" title="Edit sauce">Edit Sauce</a> | <a href="/sauces/<%= sauce.id %>/delete" title="Delete sauce">Delete sauce</a> | 
+    <a href="/sauces" title="Back to Sauces">Back</a>
+  </body>
+</html>
